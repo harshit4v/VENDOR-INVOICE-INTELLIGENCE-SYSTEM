@@ -106,9 +106,6 @@ Two modules, one shared model backend:
 
 **→ Output:** `✅ Safe invoice` or `⚠️ Manual review required`.
 
-> 📸 *See the app in action in the [Preview](#-preview) section above.*
-> 🎥 *Drop your demo video/GIF link here.*
-
 ---
 
 ## 🔬 From raw tables to a trained model
@@ -237,18 +234,6 @@ streamlit run app.py
 
 **Business:** how a rule-based label, a T-test, and a tuned classifier combine into a decision-support tool finance teams would actually trust.
 
----
-
-## 🔭 Roadmap
-
-- [ ] Real-time REST API layer
-- [ ] Cloud deployment (AWS / Azure / GCP)
-- [ ] MLflow experiment tracking
-- [ ] Airflow-orchestrated retraining
-- [ ] Deep learning anomaly detection
-- [ ] ERP system integration
-
----
 
 ## ✅ Conclusion
 
