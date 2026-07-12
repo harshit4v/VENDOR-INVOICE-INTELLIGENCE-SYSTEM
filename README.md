@@ -193,17 +193,6 @@ streamlit run app.py
 
 ---
 
-## 🔭 Roadmap
-
-- [ ] Real-time REST API layer
-- [ ] Cloud deployment (AWS / Azure / GCP)
-- [ ] MLflow experiment tracking
-- [ ] Airflow-orchestrated retraining
-- [ ] Deep learning anomaly detection
-- [ ] ERP system integration
-
----
-
 ## ✅ Conclusion
 
 An end-to-end pipeline — SQL → statistics → tuned Random Forest → Streamlit — that predicts freight cost and flags risky invoices at **89% accuracy**, built to mirror how a real finance-ops ML system would be structured, tested, and shipped.
@@ -220,7 +209,3 @@ An end-to-end pipeline — SQL → statistics → tuned Random Forest → Stream
 ⭐ If this project was useful or interesting, consider starring the repo!
 
 </div>
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
