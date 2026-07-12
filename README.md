@@ -1,13 +1,14 @@
-# VENDOR-INVOICE-INTELLIGENCE-SYSTEM
 <div align="center">
 
 # 🧾 Vendor Invoice Intelligence System
+
+**[🚀 Live App](https://invoice-intelligence-system-ichmfea6brs3spf5vrphzp.streamlit.app/)** · **[📂 Project structure](#-project-structure)** · **[📊 Results](#-model-results)**
 
 </div>
 
 ---
 
-## 🎯 The 30-second pitch
+## 🎯 buisness Problem
 
 Finance teams processing thousands of vendor invoices face two recurring headaches: **"what should this freight charge actually cost?"** and **"is this invoice hiding a mismatch someone needs to catch?"**
 
@@ -67,8 +68,25 @@ Two modules, one shared model backend:
 
 **→ Output:** `✅ Safe invoice` or `⚠️ Manual review required`.
 
-> 📸 *Drop your screenshots here:*
-> `screenshots/freight_prediction.png` · `screenshots/invoice_flagging.png`
+### 📸 Screenshots
+
+<table>
+<tr>
+<td width="50%">
+
+**Freight cost prediction**
+![Freight Cost Prediction UI](ScreenShots/freight_prediction.png)
+
+</td>
+<td width="50%">
+
+**Invoice risk flagging**
+![Invoice Risk Flagging UI](ScreenShots/invoice_flagging.png)
+
+</td>
+</tr>
+</table>
+
 > 🎥 *Drop your demo video/GIF link here.*
 
 ---
@@ -164,7 +182,7 @@ Vendor-Invoice-Intelligence-System/
 │
 ├── app.py
 ├── notebooks/
-├── screenshots/
+├── ScreenShots/
 └── requirements.txt
 ```
 
@@ -193,6 +211,17 @@ streamlit run app.py
 
 ---
 
+## 🔭 Roadmap
+
+- [ ] Real-time REST API layer
+- [ ] Cloud deployment (AWS / Azure / GCP)
+- [ ] MLflow experiment tracking
+- [ ] Airflow-orchestrated retraining
+- [ ] Deep learning anomaly detection
+- [ ] ERP system integration
+
+---
+
 ## ✅ Conclusion
 
 An end-to-end pipeline — SQL → statistics → tuned Random Forest → Streamlit — that predicts freight cost and flags risky invoices at **89% accuracy**, built to mirror how a real finance-ops ML system would be structured, tested, and shipped.
@@ -204,7 +233,7 @@ An end-to-end pipeline — SQL → statistics → tuned Random Forest → Stream
 ### 👤 Author
 
 **Your Name** — feel free to connect
-[GitHub](#) · [LinkedIn](#) · [Portfolio](#)
+[GitHub](https://github.com/harshit4v) · [LinkedIn](https://www.linkedin.com/in/harshitverma1415/)
 
 ⭐ If this project was useful or interesting, consider starring the repo!
 
