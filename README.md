@@ -2,13 +2,13 @@
 
 # 🧾 Vendor Invoice Intelligence System
 
-**[🚀 Live App](https://invoice-intelligence-system-ichmfea6brs3spf5vrphzp.streamlit.app/)** · **[📂 Project structure](#-project-structure)** · **[📊 Results](#-model-results)**
+** **[📂 Project structure](#-project-structure)** · **[📊 Results](#-model-results)**
 
 </div>
 
 ---
 
-## 🎯 Buisness Problem
+## 🎯 Business Problem
 
 Finance teams processing thousands of vendor invoices face two recurring headaches: **"what should this freight charge actually cost?"** and **"is this invoice hiding a mismatch someone needs to catch?"**
 
@@ -94,6 +94,9 @@ Two modules, one shared model backend:
 ## 🔬 From raw tables to a trained model
 
 **Source:** a relational SQLite database with two core tables.
+
+📦 **Dataset download:** [Google Drive folder](https://drive.google.com/drive/folders/1lcpbeSh59qi5EgXZpt9dt8K1kf4EY6c6?usp=drive_link)
+> The raw `.db` file isn't committed to this repo — download it from the link above and place it in the project root (or update the path in `data_preprocessing.py`) before running the training pipeline.
 
 <table>
 <tr><td>
@@ -195,9 +198,14 @@ Vendor-Invoice-Intelligence-System/
 ## ⚡ Quickstart
 
 ```bash
-git clone https://github.com/<your-username>/Vendor-Invoice-Intelligence-System.git
+git clone https://github.com/harshit4v/Vendor-Invoice-Intelligence-System.git
 cd Vendor-Invoice-Intelligence-System
 pip install -r requirements.txt
+```
+
+> 📦 Download the SQLite database from the [dataset link](https://drive.google.com/drive/folders/1lcpbeSh59qi5EgXZpt9dt8K1kf4EY6c6?usp=drive_link) and place it in the project root before running the app.
+
+```bash
 streamlit run app.py
 ```
 
