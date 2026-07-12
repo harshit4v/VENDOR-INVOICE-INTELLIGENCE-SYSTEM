@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 buisness Problem
+## 🎯 Buisness Problem
 
 Finance teams processing thousands of vendor invoices face two recurring headaches: **"what should this freight charge actually cost?"** and **"is this invoice hiding a mismatch someone needs to catch?"**
 
@@ -232,7 +232,7 @@ An end-to-end pipeline — SQL → statistics → tuned Random Forest → Stream
 
 ### 👤 Author
 
-**Your Name** — feel free to connect
+**Harshit Verma** — feel free to connect
 [GitHub](https://github.com/harshit4v) · [LinkedIn](https://www.linkedin.com/in/harshitverma1415/)
 
 ⭐ If this project was useful or interesting, consider starring the repo!
