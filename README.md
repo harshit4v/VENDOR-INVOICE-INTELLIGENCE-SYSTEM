@@ -44,8 +44,6 @@
 
 ---
 
----
-
 ## 🎯 Business Problem
 
 Finance teams processing thousands of vendor invoices face two recurring headaches: **"what should this freight charge actually cost?"** and **"is this invoice hiding a mismatch someone needs to catch?"**
