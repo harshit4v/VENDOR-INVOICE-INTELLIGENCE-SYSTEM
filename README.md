@@ -4,6 +4,48 @@
 
 </div>
 
+## 🧩 Skills used
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=flat-square)
+![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-RandomForest%20%7C%20Classification-orange?style=flat-square)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML%20Library-orange?style=flat-square)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-blueviolet?style=flat-square)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-lightgrey?style=flat-square)
+![SQLite](https://img.shields.io/badge/SQLite-Database-lightgrey?style=flat-square)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue?style=flat-square)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-blueviolet?style=flat-square)
+![Hyperparameter Tuning](https://img.shields.io/badge/Hyperparameter-Tuning-brightgreen?style=flat-square)
+![MLOps](https://img.shields.io/badge/MLOps-Pipeline%20Concepts-blueviolet?style=flat-square)
+![Project](https://img.shields.io/badge/Project-Production%20Ready-brightgreen?style=flat-square)
+
+</div>
+
+### 📸 Preview
+
+<table>
+<tr>
+<td width="50%">
+
+**Freight cost prediction**
+![Freight Cost Prediction UI](ScreenShots/ss1.png)
+
+</td>
+<td width="50%">
+
+**Invoice risk flagging**
+![Invoice Risk Flagging UI](ScreenShots/ss2.png)
+
+</td>
+</tr>
+</table>
+
+---
+
+---
+
 ## 🎯 Business Problem
 
 Finance teams processing thousands of vendor invoices face two recurring headaches: **"what should this freight charge actually cost?"** and **"is this invoice hiding a mismatch someone needs to catch?"**
@@ -64,25 +106,7 @@ Two modules, one shared model backend:
 
 **→ Output:** `✅ Safe invoice` or `⚠️ Manual review required`.
 
-### 📸 Screenshots
-
-<table>
-<tr>
-<td width="50%">
-
-**Freight cost prediction**
-![Freight Cost Prediction UI](ScreenShots/ss1.png)
-
-</td>
-<td width="50%">
-
-**Invoice risk flagging**
-![Invoice Risk Flagging UI](ScreenShots/ss2.png)
-
-</td>
-</tr>
-</table>
-
+> 📸 *See the app in action in the [Preview](#-preview) section above.*
 > 🎥 *Drop your demo video/GIF link here.*
 
 ---
