@@ -2,7 +2,7 @@
 
 # 🧾 Vendor Invoice Intelligence System
 
-** **[📂 Project structure](#-project-structure)** · **[📊 Results](#-model-results)**
+**[📂 Project structure](#-project-structure)** · **[📊 Results](#-model-results)**
 
 </div>
 
