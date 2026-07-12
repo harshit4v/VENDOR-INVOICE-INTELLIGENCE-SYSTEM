@@ -75,13 +75,13 @@ Two modules, one shared model backend:
 <td width="50%">
 
 **Freight cost prediction**
-![Freight Cost Prediction UI](ScreenShots/freight_prediction.png)
+![Freight Cost Prediction UI](ScreenShots/ss1.png)
 
 </td>
 <td width="50%">
 
 **Invoice risk flagging**
-![Invoice Risk Flagging UI](ScreenShots/invoice_flagging.png)
+![Invoice Risk Flagging UI](ScreenShots/ss2.png)
 
 </td>
 </tr>
