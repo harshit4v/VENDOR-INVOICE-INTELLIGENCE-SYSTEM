@@ -2,6 +2,8 @@
 
 # 🧾 Vendor Invoice Intelligence System
 
+**An end-to-end ML pipeline for freight cost prediction and invoice risk detection**
+
 </div>
 
 ## 🧩 Skills used
@@ -42,6 +44,35 @@
 </tr>
 </table>
 
+### 🎬 Demo Video
+
+<div align="center">
+
+[![Watch the demo](ScreenShots/ss1.png)](https://youtu.be/AlrBu6p75iI?si=2LGLg4Wab4k2HjBT)
+
+*Click the thumbnail above to watch a full walkthrough of the app in action.*
+
+</div>
+
+> 💡 Replace the link above with your actual demo video URL (YouTube, Loom, or a Google Drive share link). If you'd rather embed a local file, you can also add a short GIF here using `![demo](ScreenShots/demo.gif)`.
+
+---
+
+## 📖 About the Project
+
+Finance teams processing high volumes of vendor invoices routinely face two costly, manual bottlenecks: estimating freight charges without a consistent basis, and catching invoice discrepancies before payment goes out. Left unchecked, these gaps lead to inconsistent cost forecasting and payments issued against invoices with hidden mismatches or unusual delays.
+
+**Vendor Invoice Intelligence System** is an end-to-end machine learning pipeline built to solve both problems in a single workflow — taking raw purchase and invoice data from a relational database, transforming it through statistically validated feature engineering, and surfacing predictions through a live, interactive application finance teams can actually use.
+
+The system tackles two distinct tasks:
+
+- **Freight Cost Prediction** — a regression model that estimates the expected freight cost of an invoice based on quantity and dollar value, replacing guesswork with a consistent, data-driven estimate.
+- **Invoice Risk Flagging** — a classification model that flags invoices likely to need manual review, based on delay patterns and quantity/dollar mismatches between purchase orders and invoices.
+
+Since no ground-truth "risk" label existed in the raw data, one was engineered using a rule-based heuristic (mismatch OR average delay > 10 days) before any model was trained — a deliberate step to ensure the classifier learned from meaningful signal rather than arbitrary noise. Every candidate feature was validated through hypothesis testing (T-tests) and Random Forest importance rankings before being included, and both models were tuned via `GridSearchCV` with 5-fold cross-validation rather than relying on hand-picked defaults.
+
+The final Random Forest classifier achieves **89.54% accuracy**, and both models are served through a real-time **Streamlit** application — built to mirror how a finance-ops ML system would actually be structured, validated, and shipped in production.
+
 ---
 
 ## 🎯 Business Problem
@@ -71,15 +102,6 @@ flowchart LR
     F --> G["Serialized model\n(joblib / pickle)"]
     G --> H(["Streamlit app\nreal-time predictions"])
 ```
-
----
-
-## 🧠 Why this isn't "just another sklearn notebook"
-
-- **Labels weren't handed to us** — invoice risk had no ground truth, so labels were derived with a rule-based heuristic (*mismatch OR avg. delay > 10 days*) before any model was trained.
-- **Features earned their place** — every candidate feature was run through a T-test; anything with p > 0.05 (like `days_to_pay`, `total_brands`) was cut rather than left in for the model to shrug at.
-- **Dates were computed, not assumed** — receiving delay, PO-to-invoice lag, and payment lag were all derived using SQLite's `julianday()`, straight from string-typed date columns.
-- **Tuning was systematic** — `GridSearchCV` swept `criterion`, `max_depth`, `min_samples_split/leaf`, and `n_estimators` under 5-fold cross-validation rather than hand-picked defaults.
 
 ---
 
@@ -162,7 +184,7 @@ Tuned with `GridSearchCV` over `criterion`, `max_depth`, `min_samples_split`, `m
 
 | Metric | Result |
 |:---|:---:|
-| **Final accuracy** | **89%** |
+| **Final accuracy** | **89.54%** |
 | Best model | Random Forest Classifier |
 | False positives | Reduced vs. baseline |
 | Feature set | Trimmed via T-test + importance ranking |
@@ -232,10 +254,11 @@ streamlit run app.py
 
 **Business:** how a rule-based label, a T-test, and a tuned classifier combine into a decision-support tool finance teams would actually trust.
 
+---
 
 ## ✅ Conclusion
 
-An end-to-end pipeline — SQL → statistics → tuned Random Forest → Streamlit — that predicts freight cost and flags risky invoices at **89% accuracy**, built to mirror how a real finance-ops ML system would be structured, tested, and shipped.
+An end-to-end pipeline — SQL → statistics → tuned Random Forest → Streamlit — that predicts freight cost and flags risky invoices at **89.54% accuracy**, built to mirror how a real finance-ops ML system would be structured, tested, and shipped.
 
 ---
 
