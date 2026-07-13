@@ -48,13 +48,11 @@
 
 <div align="center">
 
-[![Watch the demo](ScreenShots/ss1.png)](https://youtu.be/AlrBu6p75iI?si=2LGLg4Wab4k2HjBT)
+![Watch the demo](https://youtu.be/AlrBu6p75iI?si=2LGLg4Wab4k2HjBT)
 
 *Click the thumbnail above to watch a full walkthrough of the app in action.*
 
 </div>
-
-> 💡 Replace the link above with your actual demo video URL (YouTube, Loom, or a Google Drive share link). If you'd rather embed a local file, you can also add a short GIF here using `![demo](ScreenShots/demo.gif)`.
 
 ---
 
