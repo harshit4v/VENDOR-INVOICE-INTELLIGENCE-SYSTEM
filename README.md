@@ -48,9 +48,9 @@
 
 <div align="center">
 
-![Watch the demo](https://youtu.be/AlrBu6p75iI?si=2LGLg4Wab4k2HjBT)
+[![Watch the demo](https://img.shields.io/badge/▶_Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/AlrBu6p75iI?si=2LGLg4Wab4k2HjBT)
 
-*Click the thumbnail above to watch a full walkthrough of the app in action.*
+*Click the button above to watch a full walkthrough of the app in action.*
 
 </div>
 
